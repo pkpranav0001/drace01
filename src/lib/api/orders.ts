@@ -103,7 +103,6 @@ export const verifyPaymentAndCreateOrder = createServerFn({ method: "POST" })
         order_number: orderNumber,
         total_amount: grandTotal,
         status: "Confirmed",
-        payment_id: paymentId,
       })
       .select("id")
       .single();
